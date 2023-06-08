@@ -15,29 +15,33 @@ public:
         while (i < s.length() && j < p.length()) {
             if (p[j] != '*') {
                 exp = p[j];
-            if (match(s[i], exp)) {
-                i++;
+                if (match(s[i], exp)) {
+                    i++;
+                    j++;
+                } else {
+                    return false;
+                }
             } else {
-                return false;
-            }
-            } else {
-                while (match(s[i], exp)) {
+                while (match(s[i], exp) && i < s.length()) {
                     i++;
                 }
                 j++;
             }
         }
 
-
-        return true;
+        return i >= s.length() && j >= p.length();
     }
 };
 
 #ifdef DEBUG
 int main() {
     Solution s = Solution();
-    cout << s.isMatch("ab", ".*") << endl;
-    cout << s.isMatch("ab", "a*") << endl;
-    cout << s.isMatch("abb", ".*b") << endl;
+    while (true) {
+        string s1, s2;
+        getline(cin, s1);
+        if (s1.empty()) break;
+        getline(cin, s2);
+        cout << s.isMatch(s1, s2) << endl;
+    }
 }
 #endif
