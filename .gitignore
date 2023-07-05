@@ -2,3 +2,4 @@ bin/
 .gdb_history
 .cache
 build/
+*.dSYM/
