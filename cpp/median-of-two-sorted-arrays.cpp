@@ -38,3 +38,5 @@ public:
     cout << endl;
   }
 };
+
+int main() { return 0; }

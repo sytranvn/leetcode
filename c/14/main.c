@@ -39,12 +39,12 @@ int** fourSum(int* nums, int numsSize, int target, int* returnSize, int** return
 }
 
 int main() {
-    int * nums = &(int[]){1,0,-1,0,-2,2};
+    int nums[] = {1,0,-1,0,-2,2};
     int numsSize = 5;
     int target = 0;
     int * returnSize;
     int ** returnColumnSizes;
-    fourSum(nums, numsSize, target, returnSize, returnColumnSizes);
+    fourSum((int*)&nums, numsSize, target, returnSize, returnColumnSizes);
 
 
     return 0;

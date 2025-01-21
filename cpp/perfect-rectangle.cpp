@@ -57,3 +57,4 @@ public:
     return area == area2 && area == total_area;
   }
 };
+int main() { return 0; }
