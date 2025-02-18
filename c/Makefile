@@ -6,7 +6,6 @@
 #
 OBJ=build/obj/
 BIN=build/bin/
-PID:=problem_id
 
 EXCLUDE_DIRS=$(subst /$,, include template build)
 
@@ -42,9 +41,13 @@ test:
 	done
 
 new:
+ifdef PID
 	mkdir -p ${PID}
-	touch ${PID}/${PID}.{c}
+	touch ${PID}/main.c
 	touch ${PID}/{in,out}
+else
+	@echo missing PID
+endif
 
 clean:
 	rm -rf $(BIN) $(OBJ)
