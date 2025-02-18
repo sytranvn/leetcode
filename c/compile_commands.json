@@ -1,0 +1,171 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "118/main.o",
+      "118/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/118/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/118/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "119/main.o",
+      "119/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/119/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/119/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "121/main.o",
+      "121/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/121/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/121/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "122/main.o",
+      "122/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/122/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/122/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "123/main.o",
+      "123/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/123/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/123/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "14/main.o",
+      "14/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/14/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/14/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "2172/main.o",
+      "2172/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/2172/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/2172/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "2221/main.o",
+      "2221/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/2221/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/2221/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "2375/main.o",
+      "2375/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/2375/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/2375/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "44/main.o",
+      "44/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/44/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/44/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "773/main.o",
+      "773/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/773/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/773/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "86/main.o",
+      "86/main.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/86/main.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/86/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/opt/homebrew/Cellar/cmocka/1.1.7/include",
+      "-c",
+      "-o",
+      "118/test.o",
+      "118/test.c"
+    ],
+    "directory": "/Users/sytd/Code/sytranvn/leetcode/c",
+    "file": "/Users/sytd/Code/sytranvn/leetcode/c/118/test.c",
+    "output": "/Users/sytd/Code/sytranvn/leetcode/c/118/test.o"
+  }
+]

@@ -6,14 +6,17 @@
 #
 OBJ=build/obj/
 BIN=build/bin/
+TEST=build/test/
+LIBS=cmocka
+CFLAGS:=$(shell pkg-config --cflags --libs $(LIBS))
 
 EXCLUDE_DIRS=$(subst /$,, include template build)
 
 PROBLEMS = $(filter-out $(EXCLUDE_DIRS), $(subst /$,,$(wildcard */)))
 
-all: build test
+all: build
 
-build: $(OBJ) $(BIN) $(addprefix $(BIN), $(PROBLEMS))
+build: $(OBJ) $(BIN) $(TEST) $(addprefix $(BIN), $(PROBLEMS)) $(addprefix $(TEST), $(PROBLEMS))
 
 $(OBJ):
 	mkdir -p $@
@@ -21,33 +24,31 @@ $(OBJ):
 $(BIN):
 	mkdir -p $@
 
-$(OBJ)%.o: %/main.c | $(OBJ)
+$(TEST):
+	mkdir -p $@
+
+$(OBJ)%.o: %/%.c | $(OBJ)
 	$(CC) -c $< -o $@
 
-$(BIN)%: $(OBJ)%.o | $(BIN)
-	$(CC) $< -o $@
+$(BIN)%: %/solution.o %/main.o | $(BIN)
+	$(CC) $^ -o $@
 
-test:
-	for P in $(PROBLEMS); do \
-		for f in $$P/in*; do \
-			"$(BIN)/$$P" < "$$f" | diff $${f/in/out} -; \
-			if [ "$$?" -ne 0 ]; then \
-				echo $$f Failed; \
-				exit 1; \
-			else \
-				echo $$f Passed; \
-			fi; \
-		done; \
-	done
+$(TEST)%: %/solution.o %/test.o | $(TEST)
+	$(CC) $(CFLAGS) $^ -o $@
 
 new:
 ifdef PID
 	mkdir -p ${PID}
-	touch ${PID}/main.c
-	touch ${PID}/{in,out}
+	cp template/* ${PID}/
 else
 	@echo missing PID
 endif
 
 clean:
-	rm -rf $(BIN) $(OBJ)
+	$(RM) -rf $(BIN) $(OBJ) $(TEST)
+
+test: $(addsuffix _test_run, $(addprefix $(TEST), $(PROBLEMS)))
+
+%_test_run: %
+	./$<
+

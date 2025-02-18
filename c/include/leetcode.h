@@ -5,6 +5,11 @@
 
 #ifndef LEETCODE_H
 #define LEETCODE_H
+
+// NOTE: make some helper to read desire data
+// #define READ_LINKED_LIST
+// #define READ_BT
+// #define READ_STRING
 /**
  * Definition for singly-linked list.
  */
